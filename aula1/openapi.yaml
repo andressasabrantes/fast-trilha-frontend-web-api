@@ -10,15 +10,15 @@ tags:
   - name: workouts
     description: Everything about users workouts
 paths:
-  <PATH>:  # <- complete aqui
-    <METHOD>:   # <- complete aqui
+  /users/{userId}/workouts:
+    get:
       tags:
         - workouts
       summary: List user workouts
       description: List the workouts of the user specified by the `userId`.
       operationId: listWorkouts
       parameters:
-        - name:   # <- complete aqui
+        - name:  userId
           in: path
           description: ID of the user
           required: true
@@ -33,7 +33,7 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref:   # <- complete aqui
+                  $ref: "#/components/schemas/Workout"
                 example:
                   - name: "Mobilidade Quadril Z Sentado"
                     sets: 3
