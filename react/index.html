@@ -18,14 +18,30 @@
         const root = ReactDOM.createRoot(app);
 
         function MyApp() {
-            return {
-                
-            }
-
+            return (
+                <div>
+                    <header>
+                        <img src="./react-logo.png" alt="Logo React" width="80px" />
+                    </header>
+                    <main>
+                        <h1>Motivos para aprender React</h1>
+                        <ol>
+                            <li>Fácil de aprender</li>
+                            <li>Biblioteca muito popular</li>
+                            <li>Tenho mais chances de conseguir um emprego com desenvolvedor se eu sei React</li>
+                        </ol>
+                    </main>
+                    <footer>
+                        <small>
+                            @ 2023 FAST - CESAR School. Todos os direitos reservados.
+                        </small>
+                    </footer>
+                </div>
+            );
         }
 
-
-        root.render(<Component />);
+        root.render(<MyApp />);
     </script>
 </body>
 </html>
+
