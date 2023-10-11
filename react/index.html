@@ -17,12 +17,20 @@
         const app = document.getElementById("app");
         const root = ReactDOM.createRoot(app);
 
-        function MyApp() {
+
+        function Header() {
             return (
                 <div>
                     <header>
                         <img src="./react-logo.png" alt="Logo React" width="80px" />
                     </header>
+                </div>
+            );
+        }
+
+        function Main() {
+            return (
+                <div>
                     <main>
                         <h1>Motivos para aprender React</h1>
                         <ol>
@@ -31,12 +39,29 @@
                             <li>Tenho mais chances de conseguir um emprego com desenvolvedor se eu sei React</li>
                         </ol>
                     </main>
+                </div>
+            );
+        }
+
+        function Footer() {
+            return (
+                <div>
                     <footer>
                         <small>
                             @ 2023 FAST - CESAR School. Todos os direitos reservados.
                         </small>
                     </footer>
                 </div>
+            );
+        }
+
+        function MyApp() {
+            return (
+                <>
+                    <Header />
+                    <Main />
+                    <Footer />
+                </>
             );
         }
 
